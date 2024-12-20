@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIME</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="circle">
+            <h1 id="time"></h1>
+        </div>
+    </div>
+    <script>
+        function myfunction(){
+            var  x=new Date().getHours()
+            var  y=new Date().getMinutes()
+            var  z=new Date().getSeconds()
+            var  presenttime=x+'h : '+y+'m : '+z+'s'
+            document.getElementById('time').innerHTML=presenttime;
+            if (presenttime==13+'h : '+9+'m : '+40+'s'){
+                alert('time to drink water')
+            }
+        } 
+        setInterval(myfunction,1000)
+    </script>
+</body>
+</html>
+
+
+
